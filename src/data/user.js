@@ -115,12 +115,14 @@ export default {
     },
   ],
   skills: [
-    "JavaScript (ES6+)",
+    "ReactJS",
+    "NextJS",
+    "NodeJS",
+    "ExpressJS",
+    "NestJS",
+    "React Native",
+    "ASP.net Core",
     "TypeScript",
-    "React",
-    "Eleventy",
-    "Node.js",
-    "WordPress",
   ],
   expertise: [
     {
