@@ -1,7 +1,6 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import { Typography, Grid, useMediaQuery, Button } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import user from "../../data/user";
 import projectsData from "../../data/projects";
 
 const useStyles = makeStyles((theme) => ({

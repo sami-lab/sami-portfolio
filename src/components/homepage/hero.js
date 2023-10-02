@@ -5,7 +5,6 @@ import ReactRotatingText from "react-rotating-text";
 
 import { useTranslation, Trans } from "react-i18next";
 
-import user from "../../data/user";
 import ContactPopup from "./contactPopup";
 const useStyles = makeStyles((theme) => ({
   root: {
