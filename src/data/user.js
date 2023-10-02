@@ -1,6 +1,8 @@
 export default {
   name: "Muhammad Sami",
+  jobTitle: ["the web.", "mobile apps."],
   email: "s.m.sami125@gmail.com",
+
   workUrl: "https://upstatement.com/",
   github: "https://upstatement.com/",
   social: [

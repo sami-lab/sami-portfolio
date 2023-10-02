@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Typography, Grid, useMediaQuery, Button } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
+import ReactRotatingText from "react-rotating-text";
+
+import { useTranslation, Trans } from "react-i18next";
+
 import user from "../../data/user";
 import ContactPopup from "./contactPopup";
 const useStyles = makeStyles((theme) => ({
@@ -55,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function hero() {
+  const { t, ready } = useTranslation();
   const classes = useStyles();
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
@@ -101,26 +106,33 @@ export default function hero() {
           data-aos-duration='2000'
           data-aos-anchor-placement='top-bottom'
         >
-          {user.name}
+          {t("home.hero.name")}
         </Typography>
       </Grid>
       {/* name */}
       <Grid item style={{ marginTop: "10px" }}>
-        <Typography
-          varaint='body1'
-          className={classes.font}
-          style={{
-            color: "#8892b0",
-            lineHeight: 0.9,
-            fontWeight: 600,
-            fontFamily: "Calibre",
-            fontSize: "clamp(40px, 8vw, 80px)",
-          }}
-          data-aos='fade-up'
-          data-aos-duration='2000'
-        >
-          I build things for the web.
-        </Typography>
+        {ready && (
+          <Typography
+            varaint='body1'
+            className={classes.font}
+            style={{
+              color: "#8892b0",
+              lineHeight: 0.9,
+              fontWeight: 600,
+              fontFamily: "Calibre",
+              fontSize: "clamp(40px, 8vw, 80px)",
+            }}
+            data-aos='fade-up'
+            data-aos-duration='2000'
+          >
+            I build things for{" "}
+            <ReactRotatingText
+              items={t("home.hero.jobTitle", { returnObjects: true })}
+              cursor={false}
+              emptyPause={500}
+            />
+          </Typography>
+        )}
       </Grid>
       {/* description */}
       <Grid item style={{ marginTop: "20px" }}>
@@ -138,13 +150,25 @@ export default function hero() {
           data-aos='fade-up'
           data-aos-duration='2000'
         >
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at{" "}
-          <a href={user.workUrl} target='_blank' className={classes.workUrl}>
-            Upstatement
-          </a>
-          .
+          <Trans
+            i18nKey={t("home.hero.description")}
+            components={{
+              a1: (
+                <a
+                  href={t("home.hero.fiverr")}
+                  target='_blank'
+                  className={classes.workUrl}
+                ></a>
+              ),
+              a2: (
+                <a
+                  href={t("home.hero.upwork")}
+                  target='_blank'
+                  className={classes.workUrl}
+                ></a>
+              ),
+            }}
+          />
         </Typography>
       </Grid>
       <Grid item style={{ marginTop: "50px" }}>

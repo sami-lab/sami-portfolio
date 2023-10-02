@@ -11,11 +11,15 @@
     "aos": "^2.3.4",
     "axios": "^0.24.0",
     "fs-extra": "^10.0.0",
+    "i18next": "^23.5.1",
+    "i18next-browser-languagedetector": "^7.1.0",
     "next": "latest",
     "nodemailer": "^6.9.5",
     "prop-types": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-i18next": "^13.2.2",
+    "react-rotating-text": "^1.4.1",
     "styled-components": "^5.3.6"
   },
   "scripts": {
