@@ -2,7 +2,6 @@ export default {
   name: "Muhammad Sami",
   jobTitle: ["the web.", "mobile apps."],
   email: "s.m.sami125@gmail.com",
-
   workUrl: "https://upstatement.com/",
   github: "https://upstatement.com/",
   social: [
@@ -116,22 +115,13 @@ export default {
       ),
     },
   ],
-  skills: [
-    "ReactJS",
-    "NextJS",
-    "NodeJS",
-    "ExpressJS",
-    "NestJS",
-    "React Native",
-    "ASP.net Core",
-    "TypeScript",
-  ],
+
   expertise: [
     {
       name: "Software<br/>Development",
       color: "#DF058D",
       description:
-        "Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.",
+        "Experienced in both functional and OOP: JavaScript, TypeScript and C#.",
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -170,10 +160,10 @@ export default {
       ),
     },
     {
-      name: "Flutter Dev<br/>Android, iOS",
+      name: "React native Dev<br/>Android, iOS",
       color: "#FF6B2B",
       description:
-        "Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.",
+        "Skilled in developing hybrid mobile apps and cross-platform solutions using the React native framework.",
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
