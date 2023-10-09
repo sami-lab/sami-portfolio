@@ -4,7 +4,7 @@
     "jobTitle": ["the web.", "mobile apps."],
     "description": "I’m a software engineer specializing in building exceptional digital experiences. Currently, I'm working as a fullstack developer on platforms such as <a1>Fiverr</a1> and <a2>Upwork</a2>.",
     "fiverr": "https://www.fiverr.com/sameer1234560",
-    "upwork": "https://www.upwork.com/o/profiles/users/~011e1ec384a5230ed8/?viewMode=1"
+    "upwork": "https://www.upwork.com/freelancers/~011e1ec384a5230ed8"
   },
   "aboutMe": {
     "1": "Hello, I'm Muhammad Sami 👋, a passionate software engineer with a relentless appetite for learning and problem-solving. My expertise lies in the world of software development, where I specialize in MERN stack and ASP.NET Core technologies. With a knack for conceptualizing, designing, and deploying software solutions, I thrive on crafting logical and mathematical solutions to address complex business challenges.",
@@ -28,6 +28,60 @@
       "React Native",
       "ASP.net Core",
       "TypeScript"
+    ]
+  },
+  "experience": {
+    "jobs": [
+      {
+        "company": "Fiverr",
+        "companyFullname": "Fiverr",
+        "companyUrl": "https://www.fiverr.com/sameer1234560",
+        "position": "Fullstack developer",
+        "startDate": "Oct 2020",
+        "endDate": "Present",
+        "work": [
+          "Level Two Freelancer",
+          "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, NextJS, React, Shopify, WordPress, Vercel, and Netlify",
+          "Communicate with multi-disciplinary teams of engineers, designers, producers, and international clients on a daily basis"
+        ]
+      },
+      {
+        "company": "Upwork",
+        "companyFullname": "Upwork",
+        "companyUrl": "https://www.upwork.com/freelancers/~011e1ec384a5230ed8",
+        "position": "Fullstack developer",
+        "startDate": "Oct 2020",
+        "endDate": "Present",
+        "work": [
+          "Top Rated Freelancer",
+          "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, NextJS, React, Shopify, WordPress, Vercel, and Netlify",
+          "Communicate with multi-disciplinary teams of engineers, designers, producers, and international clients on a daily basis"
+        ]
+      },
+      {
+        "company": "Inskire",
+        "companyFullname": "Inskire Tech",
+        "companyUrl": "https://inskire.com/hq/",
+        "position": "MERN stack developer",
+        "startDate": "Jun 2022",
+        "endDate": "Mar 2023",
+        "work": [
+          "Smart Profiling: Build a platform using MERN stack that allow acesss of plugins to free and paid users.",
+          "Tappio: Platform build using MERN stack allows creating digital business cards, Portfolio, Availibility Schedule, AI based description generator using Open AI api"
+        ]
+      },
+      {
+        "company": "Inspon",
+        "companyFullname": "Inspon Tech",
+        "companyUrl": "https://www.inspon.com/",
+        "position": "Fullstack developer",
+        "startDate": "Mar 2021",
+        "endDate": "Apr 2022",
+        "work": [
+          "Working as fullstack developer on different shopify and Wix apps",
+          "Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities"
+        ]
+      }
     ]
   }
 }
