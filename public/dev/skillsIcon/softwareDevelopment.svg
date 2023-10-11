@@ -1,0 +1,15 @@
+ <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='42'
+          height='42'
+          viewBox='0 0 42 42'
+        >
+          <path
+            fill='none'
+            stroke='#fff'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            strokeWidth='2'
+            d='M16 32.111l-1.667 6.667L12.111 41h17.778l-2.222-2.222L26 32.111M1 23.222h40M5.444 32.111h31.112A4.444 4.444 0 0041 27.667V5.444A4.444 4.444 0 0036.556 1H5.444A4.444 4.444 0 001 5.444v22.223a4.444 4.444 0 004.444 4.444z'
+          ></path>
+        </svg>

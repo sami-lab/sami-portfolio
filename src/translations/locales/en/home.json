@@ -83,5 +83,46 @@
         ]
       }
     ]
+  },
+  "expertise": {
+    "skills": [
+      {
+        "name": "Software<br/>Development",
+        "color": "#DF058D",
+        "description": "Experienced in both functional and OOP: JavaScript, TypeScript and C#.",
+        "icon": "softwareDevelopment.svg"
+      },
+      {
+        "name": "Frontend Dev<br/>React, NextJS",
+        "color": "#2C49D8",
+        "description": "Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks.",
+        "icon": "frontend.svg"
+      },
+
+      {
+        "name": "Backend Dev<br/>NodeJS, Asp.net Core",
+        "color": "#FF6B2B",
+        "description": "Passionate about UI/UX. ",
+        "icon": "backend.svg"
+      },
+      {
+        "name": "React native Dev<br/>Android, iOS",
+        "color": "#DF058D",
+        "description": "Skilled in developing hybrid mobile apps and cross-platform solutions using the React native framework.",
+        "icon": "mobileApps.svg"
+      },
+      {
+        "name": "Project/Process<br/>Management",
+        "color": "#2C49D8",
+        "description": "Passionate about UI/UX. ",
+        "icon": "project.svg"
+      },
+      {
+        "name": "Database<br/>Designing/Development",
+        "color": "#FF6B2B",
+        "description": "Passionate about UI/UX. ",
+        "icon": "database.svg"
+      }
+    ]
   }
 }

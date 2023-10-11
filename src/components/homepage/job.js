@@ -235,7 +235,7 @@ export default function Jobs() {
   const panel0 = (job) => (
     <div
       className={classes.panel}
-      data-aos='fade-up'
+      // data-aos='fade-down'
       //data-aos-duration='2000'
     >
       <Typography variant='h3' className={classes.panelHeading}>
