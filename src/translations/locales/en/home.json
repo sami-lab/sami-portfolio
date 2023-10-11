@@ -95,14 +95,14 @@
       {
         "name": "Frontend Dev<br/>React, NextJS",
         "color": "#2C49D8",
-        "description": "Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks.",
+        "description": "Over 4 years of development experience in HTML, CSS, Razor View Engine, JS, React and NextJS frameworks with a variety of UI libraries, including Material UI, Tailwind, @Shopify/polaris, Antd, Bootstap4, React-Bootstrap, Chakra UI etc.",
         "icon": "frontend.svg"
       },
 
       {
-        "name": "Backend Dev<br/>NodeJS, Asp.net Core",
+        "name": "Backend Dev<br/>NodeJS, .net",
         "color": "#FF6B2B",
-        "description": "Passionate about UI/UX. ",
+        "description": "With 3+ years of experience in backend development, I bring extensive expertise in Node.js, complemented by proficiency in Express.js, NEST.js, and ASP.NET Core. Additionally, I've good knowledge of real-time communication technologies, including Socket.io and SignalR.",
         "icon": "backend.svg"
       },
       {
@@ -114,13 +114,13 @@
       {
         "name": "Project/Process<br/>Management",
         "color": "#2C49D8",
-        "description": "Passionate about UI/UX. ",
+        "description": "Proficient in project management tools such as GitHub, Trello, Slack, Discord, Asana, and more.",
         "icon": "project.svg"
       },
       {
-        "name": "Database<br/>Designing/Development",
+        "name": "Database<br/>Designing",
         "color": "#FF6B2B",
-        "description": "Passionate about UI/UX. ",
+        "description": "Experienced in database design and development, adept at both relational (MS SQL Server, PostgreSQL) and non-relational (MongoDB, Firebase, Firestore) databases. Skilled in crafting efficient data solutions with expertise in the Entity-Relationship Diagram (ERD) and the repository pattern for improved data management and performance.",
         "icon": "database.svg"
       }
     ]

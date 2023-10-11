@@ -281,6 +281,7 @@ export default function Projects() {
                         style={{
                           cursor: "pointer",
                           color: "blue",
+                          color: theme.palette.secondary.main,
                         }}
                         onClick={() => {
                           setProjects((existingProjects) =>
