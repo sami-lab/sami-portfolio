@@ -22,6 +22,7 @@ i18n
       en: {
         translation: {
           common: enTran.common,
+          seo: enTran.seo,
           home: enTran.home,
           // here we will place our translations...
         },
