@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow:
       "0px 8px 12px 0px rgba(255, 255, 255, 0.04) inset, 0px 24px 64px -16px rgba(0, 0, 0, 0.24), 16px 24px 64px -24px rgba(255, 255, 255, 0.04) inset",
     borderTop: "1px solid rgba(255, 255, 255, 0.08)",
-    p: "16px 20px",
+
     color: "#fff",
   },
   backdrop: {
@@ -58,6 +58,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "3em",
     borderRadius: 5,
     padding: "4px",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "1em",
+    },
   },
   SendButton: {
     fontFamily: "Pacifico",
@@ -81,6 +84,7 @@ export default function ContactPopup({ open, setOpen }) {
   const theme = useTheme();
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
+  const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
 
   const initialData = {
     name: "",
@@ -140,7 +144,7 @@ export default function ContactPopup({ open, setOpen }) {
         });
       });
   };
-  const width = matchesMD ? "70%" : matchesSM ? "90%" : "97%";
+  const width = matchesSM ? "90%" : "70%";
   return (
     <Dialog
       open={open}
@@ -149,12 +153,18 @@ export default function ContactPopup({ open, setOpen }) {
       }}
       maxWidth='md'
       fullWidth
+      fullScreen={matchesXS}
       classes={{
         paper: classes.dialogPaper,
         container: classes.backdrop,
       }}
     >
-      <DialogContent style={{ position: "relative" }}>
+      <DialogContent
+        style={{
+          position: "relative",
+          padding: matchesSM ? "20px 10px" : "30px 40px",
+        }}
+      >
         <div style={{ position: "absolute", right: 5, top: 5 }}>
           <IconButton
             style={{ padding: 0, background: "transparent" }}
@@ -170,7 +180,7 @@ export default function ContactPopup({ open, setOpen }) {
           {/* heading */}
           <Grid item style={{ width: "100%", marginTop: "20px" }}>
             <Typography
-              variant='h4'
+              variant={matchesXS ? "h5" : "h4"}
               align='center'
               style={{
                 fontFamily: "Pacifico",
