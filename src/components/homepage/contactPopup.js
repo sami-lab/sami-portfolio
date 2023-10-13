@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
       "0px 8px 12px 0px rgba(255, 255, 255, 0.04) inset, 0px 24px 64px -16px rgba(0, 0, 0, 0.24), 16px 24px 64px -24px rgba(255, 255, 255, 0.04) inset",
     borderTop: "1px solid rgba(255, 255, 255, 0.08)",
     p: "16px 20px",
-    color: theme.palette.secondary.main,
+    color: "#fff",
   },
   backdrop: {
     background: "rgba(6, 7, 8, 0.64)",
@@ -32,23 +32,29 @@ const useStyles = makeStyles((theme) => ({
   },
   underline: {
     "&:before": {
-      borderBottom: `2px solid ${theme.palette.secondary.main}`,
+      borderBottom: `2px solid #fff`,
     },
-    "&:hover:not($disabled):not($focused):not($error):before": {
-      borderBottom: `2px solid ${theme.palette.secondary.main}`,
+    "&:hover:not($disabled):not($error):before": {
+      borderBottom: `2px solid #fff !important`,
+    },
+    "&.Mui-focused": {
+      borderBottom: `2px solid #fff`,
     },
   },
   root: {
-    color: theme.palette.secondary.main,
+    color: "#fff",
     fontWeight: 300,
     fontSize: "18px",
     "& .MuiFormLabel-root": {},
   },
   label: {
-    color: theme.palette.secondary.main,
+    color: "#fff",
+    "&.Mui-focused": {
+      color: "#fff",
+    },
   },
   message: {
-    border: `2px solid ${theme.palette.secondary.main}`,
+    border: `2px solid #fff`,
     marginTop: "3em",
     borderRadius: 5,
     padding: "4px",
@@ -157,7 +163,7 @@ export default function ContactPopup({ open, setOpen }) {
               setOpen(false);
             }}
           >
-            <CancelIcon style={{ fill: theme.palette.secondary.main }} />
+            <CancelIcon style={{ fill: "#fff" }} />
           </IconButton>
         </div>
         <Grid container direction='column' alignItems='center'>
@@ -169,7 +175,7 @@ export default function ContactPopup({ open, setOpen }) {
               style={{
                 fontFamily: "Pacifico",
                 fontWeight: 700,
-                color: theme.palette.secondary.main,
+                color: "#fff",
               }}
               gutterBottom
             >

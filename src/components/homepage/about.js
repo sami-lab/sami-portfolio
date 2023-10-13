@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography, Grid, useMediaQuery, Button } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import user from "../../data/user";
 import { useTranslation, Trans } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({

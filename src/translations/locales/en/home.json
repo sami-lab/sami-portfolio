@@ -128,5 +128,8 @@
         "icon": "softwareDevelopment.svg"
       }
     ]
+  },
+  "footer": {
+    "build": "Built by Muhammad Sami"
   }
 }

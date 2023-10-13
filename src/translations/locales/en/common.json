@@ -1,1 +1,36 @@
-{}
+{
+  "email": "s.m.sami125@gmail.com",
+  "github": "https://github.com/sami-lab",
+  "social": [
+    {
+      "name": "Github",
+      "url": "https://github.com/sami-lab",
+      "svg": "github.svg"
+    },
+    {
+      "name": "Fiverr",
+      "url": "https://www.fiverr.com/sameer1234560",
+      "svg": "fiverr.svg"
+    },
+    {
+      "name": "Upwork",
+      "url": "https://www.upwork.com/freelancers/~011e1ec384a5230ed8",
+      "svg": "upwork.svg"
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://api.whatsapp.com/send?phone=923062219739",
+      "svg": "whatsApp.svg"
+    },
+    {
+      "name": "Linkedin",
+      "url": "https://www.linkedin.com/in/muhammad-sami-a37601185/",
+      "svg": "linkedin.svg"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:s.m.sami125@gmail.com",
+      "svg": "email.svg"
+    }
+  ]
+}
