@@ -299,6 +299,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "4px",
     mixBlendMode: "multiply",
     filter: "grayscale(100%) contrast(1) brightness(90%)",
+    "&:hover": {
+      filter: "none",
+    },
     [theme.breakpoints.down("768")]: {
       objectFit: "cover",
       width: "auto",
@@ -504,15 +507,8 @@ export default function FeaturedProjects() {
                   >
                     Featured Project
                   </p>
-                  <h3 style={{ margin: 0 }}>
-                    <a
-                      href='https://halcyon-theme.netlify.com/'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                      className={classes.projectHeading}
-                    >
-                      {p.title}
-                    </a>
+                  <h3 style={{ margin: 0 }} className={classes.projectHeading}>
+                    {p.title}
                   </h3>
                   <div className={classes.projectDescription}>{p.summary}</div>
                   <ul

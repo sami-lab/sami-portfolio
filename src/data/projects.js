@@ -48,7 +48,7 @@ const projects = [
     title: "B2B-EDITOR",
     summary:
       "A huge B2B App that allow Poster customizations of various editor designs. I have collaborated as Fullstack developer. It Includes App to customize each editor so merchant can change change colors, font etc of UI. There are many editors like Star Map Poster, Voice Poster, Zodiac Editor, Love Map Poster, Cartoon Poster, City Map Poster, Greeting Card, Text Art Poster, Audio Book, Love Book, Children Book and 15 more",
-    image: "b2b-editor.webp",
+    image: "b2b-editor.png",
     gitUrl: "",
     deployedUrl: "",
     technologies: [
