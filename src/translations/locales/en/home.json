@@ -87,41 +87,45 @@
   "expertise": {
     "skills": [
       {
-        "name": "Software<br/>Development",
-        "color": "#DF058D",
-        "description": "Experienced in both functional and OOP: JavaScript, TypeScript and C#.",
-        "icon": "softwareDevelopment.svg"
-      },
-      {
         "name": "Frontend Dev<br/>React, NextJS",
         "color": "#2C49D8",
+
         "description": "Over 4 years of development experience in HTML, CSS, Razor View Engine, JS, React and NextJS frameworks with a variety of UI libraries, including Material UI, Tailwind, @Shopify/polaris, Antd, Bootstap4, React-Bootstrap, Chakra UI etc.",
         "icon": "frontend.svg"
       },
 
       {
         "name": "Backend Dev<br/>NodeJS, .net",
-        "color": "#FF6B2B",
+        "color": "#DF058D",
         "description": "With 3+ years of experience in backend development, I bring extensive expertise in Node.js, complemented by proficiency in Express.js, NEST.js, and ASP.NET Core. Additionally, I've good knowledge of real-time communication technologies, including Socket.io and SignalR.",
         "icon": "backend.svg"
       },
       {
+        "name": "Database<br/>Designing",
+
+        "color": "#FF6B2B",
+        "description": "Experienced in database design and development, adept at both relational (MS SQL Server, PostgreSQL) and non-relational (MongoDB, Firebase, Firestore) databases. Skilled in crafting efficient data solutions with expertise in the Entity-Relationship Diagram (ERD) and the repository pattern for improved data management and performance.",
+        "icon": "database.svg"
+      },
+      {
         "name": "React native Dev<br/>Android, iOS",
-        "color": "#DF058D",
+        "color": "#2C49D8",
         "description": "Skilled in developing hybrid mobile apps and cross-platform solutions using the React native framework.",
         "icon": "mobileApps.svg"
       },
       {
         "name": "Project/Process<br/>Management",
-        "color": "#2C49D8",
+        "color": "#DF058D",
+
         "description": "Proficient in project management tools such as GitHub, Trello, Slack, Discord, Asana, and more.",
         "icon": "project.svg"
       },
+
       {
-        "name": "Database<br/>Designing",
+        "name": "Software<br/>Development",
         "color": "#FF6B2B",
-        "description": "Experienced in database design and development, adept at both relational (MS SQL Server, PostgreSQL) and non-relational (MongoDB, Firebase, Firestore) databases. Skilled in crafting efficient data solutions with expertise in the Entity-Relationship Diagram (ERD) and the repository pattern for improved data management and performance.",
-        "icon": "database.svg"
+        "description": "Experienced in both functional and OOP: JavaScript, TypeScript and C#.",
+        "icon": "softwareDevelopment.svg"
       }
     ]
   }

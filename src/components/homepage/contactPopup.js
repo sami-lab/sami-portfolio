@@ -17,25 +17,38 @@ import { Alert } from "@material-ui/lab";
 import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
+  dialogPaper: {
+    background: "#1A1D21",
+    borderRadius: "16px",
+    boxShadow:
+      "0px 8px 12px 0px rgba(255, 255, 255, 0.04) inset, 0px 24px 64px -16px rgba(0, 0, 0, 0.24), 16px 24px 64px -24px rgba(255, 255, 255, 0.04) inset",
+    borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+    p: "16px 20px",
+    color: theme.palette.secondary.main,
+  },
+  backdrop: {
+    background: "rgba(6, 7, 8, 0.64)",
+    backdropFilter: "blur(4px)",
+  },
   underline: {
     "&:before": {
-      borderBottom: `2px solid #0b72b9`,
+      borderBottom: `2px solid ${theme.palette.secondary.main}`,
     },
     "&:hover:not($disabled):not($focused):not($error):before": {
-      borderBottom: `2px solid #0b72b9`,
+      borderBottom: `2px solid ${theme.palette.secondary.main}`,
     },
   },
   root: {
-    color: "#0b72b9",
+    color: theme.palette.secondary.main,
     fontWeight: 300,
     fontSize: "18px",
     "& .MuiFormLabel-root": {},
   },
   label: {
-    color: "#0b72b9",
+    color: theme.palette.secondary.main,
   },
   message: {
-    border: `2px solid #0b72b9`,
+    border: `2px solid ${theme.palette.secondary.main}`,
     marginTop: "3em",
     borderRadius: 5,
     padding: "4px",
@@ -50,6 +63,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#FFBA60",
     "&:hover": {
       backgroundColor: "#FFBA60",
+    },
+    "&.Mui-disabled": {
+      opacity: 0.5,
+      color: "#fff",
     },
   },
 }));
@@ -126,6 +143,10 @@ export default function ContactPopup({ open, setOpen }) {
       }}
       maxWidth='md'
       fullWidth
+      classes={{
+        paper: classes.dialogPaper,
+        container: classes.backdrop,
+      }}
     >
       <DialogContent style={{ position: "relative" }}>
         <div style={{ position: "absolute", right: 5, top: 5 }}>
@@ -136,7 +157,7 @@ export default function ContactPopup({ open, setOpen }) {
               setOpen(false);
             }}
           >
-            <CancelIcon style={{ fill: "#0b72b9" }} />
+            <CancelIcon style={{ fill: theme.palette.secondary.main }} />
           </IconButton>
         </div>
         <Grid container direction='column' alignItems='center'>
@@ -148,7 +169,7 @@ export default function ContactPopup({ open, setOpen }) {
               style={{
                 fontFamily: "Pacifico",
                 fontWeight: 700,
-                color: "#0b72b9",
+                color: theme.palette.secondary.main,
               }}
               gutterBottom
             >
@@ -298,7 +319,12 @@ export default function ContactPopup({ open, setOpen }) {
           </Grid>
           <Grid item style={{ marginTop: "10px" }}>
             <Button
-              style={{ fontWeight: 300, fontFamily: "Montserrat" }}
+              style={{
+                fontWeight: 300,
+                fontFamily: "Montserrat",
+                color: "#fff",
+                textTransform: "none",
+              }}
               color='primary'
               onClick={() => {
                 setData(initialData);
