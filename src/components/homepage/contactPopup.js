@@ -15,6 +15,7 @@ import CancelIcon from "@material-ui/icons/Cancel";
 import { makeStyles } from "@material-ui/styles";
 import { Alert } from "@material-ui/lab";
 import axios from "axios";
+import { phone } from "phone";
 
 const useStyles = makeStyles((theme) => ({
   dialogPaper: {
@@ -117,12 +118,10 @@ export default function ContactPopup({ open, setOpen }) {
       });
       return;
     }
-    if (
-      !/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(data.phone)
-    ) {
-      setError({ active: true, message: "Invalid Phone Number" });
-      return;
-    }
+    // if (!phone(data.phone).isValid) {
+    //   setError({ active: true, message: "Invalid Phone Number" });
+    //   return;
+    // }
     setLoading(true);
     const url = "/api/sendmail";
 

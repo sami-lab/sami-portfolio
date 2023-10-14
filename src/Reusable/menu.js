@@ -1,24 +1,24 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'next/link';
-import styled from 'styled-components';
-import pages from '../data/pages';
-import { useTheme } from '@material-ui/core/styles';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "next/link";
+import styled from "styled-components";
+import pages from "../data/pages";
+import { useTheme } from "@material-ui/core/styles";
 
 export const KEY_CODES = {
-  ARROW_LEFT: 'ArrowLeft',
-  ARROW_LEFT_IE11: 'Left',
-  ARROW_RIGHT: 'ArrowRight',
-  ARROW_RIGHT_IE11: 'Right',
-  ARROW_UP: 'ArrowUp',
-  ARROW_UP_IE11: 'Up',
-  ARROW_DOWN: 'ArrowDown',
-  ARROW_DOWN_IE11: 'Down',
-  ESCAPE: 'Escape',
-  ESCAPE_IE11: 'Esc',
-  TAB: 'Tab',
-  SPACE: ' ',
-  SPACE_IE11: 'Spacebar',
-  ENTER: 'Enter',
+  ARROW_LEFT: "ArrowLeft",
+  ARROW_LEFT_IE11: "Left",
+  ARROW_RIGHT: "ArrowRight",
+  ARROW_RIGHT_IE11: "Right",
+  ARROW_UP: "ArrowUp",
+  ARROW_UP_IE11: "Up",
+  ARROW_DOWN: "ArrowDown",
+  ARROW_DOWN_IE11: "Down",
+  ESCAPE: "Escape",
+  ESCAPE_IE11: "Esc",
+  TAB: "Tab",
+  SPACE: " ",
+  SPACE_IE11: "Spacebar",
+  ENTER: "Enter",
 };
 const useOnClickOutside = (ref, handler) => {
   useEffect(
@@ -32,12 +32,12 @@ const useOnClickOutside = (ref, handler) => {
         handler(event);
       };
 
-      document.addEventListener('mousedown', listener);
-      document.addEventListener('touchstart', listener);
+      document.addEventListener("mousedown", listener);
+      document.addEventListener("touchstart", listener);
 
       return () => {
-        document.removeEventListener('mousedown', listener);
-        document.removeEventListener('touchstart', listener);
+        document.removeEventListener("mousedown", listener);
+        document.removeEventListener("touchstart", listener);
       };
     },
     // Add ref and handler to effect dependencies
@@ -95,11 +95,12 @@ const StyledHamburgerButton = styled.button`
     transition-delay: ${(props) => (props.menuOpen ? `0.12s` : `0s`)};
     transform: rotate(${(props) => (props.menuOpen ? `225deg` : `0deg`)});
     transition-timing-function: cubic-bezier(
-      ${(props) => (props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`)}
+      ${(props) =>
+        props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`}
     );
     &:before,
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: auto;
@@ -118,8 +119,8 @@ const StyledHamburgerButton = styled.button`
       opacity: ${(props) => (props.menuOpen ? 0 : 1)};
       transition: ${({ menuOpen }) =>
         menuOpen
-          ? 'top 0.1s ease-out,opacity 0.1s ease-out 0.12s'
-          : 'top 0.1s ease-in 0.25s,opacity 0.1s ease-in'};
+          ? "top 0.1s ease-out,opacity 0.1s ease-out 0.12s"
+          : "top 0.1s ease-in 0.25s,opacity 0.1s ease-in"};
     }
     &:after {
       width: ${(props) => (props.menuOpen ? `100%` : `80%`)};
@@ -127,8 +128,8 @@ const StyledHamburgerButton = styled.button`
       transform: rotate(${(props) => (props.menuOpen ? `-90deg` : `0`)});
       transition: ${({ menuOpen }) =>
         menuOpen
-          ? 'bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s'
-          : 'bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19)'};
+          ? "bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s"
+          : "bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19)"};
     }
   }
 `;
@@ -151,7 +152,7 @@ const StyledSidebar = styled.aside`
     box-shadow: -10px 0px 30px -15px rgba(2, 12, 27, 0.7);
     z-index: 9;
     transform: translateX(${(props) => (props.menuOpen ? 0 : 100)}vw);
-    visibility: ${(props) => (props.menuOpen ? 'visible' : 'hidden')};
+    visibility: ${(props) => (props.menuOpen ? "visible" : "hidden")};
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   nav {
@@ -240,7 +241,10 @@ const Menu = () => {
   let lastFocusableEl;
 
   const setFocusables = () => {
-    menuFocusables = [buttonRef.current, ...Array.from(navRef.current.querySelectorAll('a'))];
+    menuFocusables = [
+      buttonRef.current,
+      ...Array.from(navRef.current.querySelectorAll("a")),
+    ];
     firstFocusableEl = menuFocusables[0];
     lastFocusableEl = menuFocusables[menuFocusables.length - 1];
   };
@@ -293,14 +297,14 @@ const Menu = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('keydown', onKeyDown);
-    window.addEventListener('resize', onResize);
+    document.addEventListener("keydown", onKeyDown);
+    window.addEventListener("resize", onResize);
 
     setFocusables();
 
     return () => {
-      document.removeEventListener('keydown', onKeyDown);
-      window.removeEventListener('resize', onResize);
+      document.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("resize", onResize);
     };
   }, []);
 
@@ -314,12 +318,11 @@ const Menu = () => {
           onClick={toggleMenu}
           menuOpen={menuOpen}
           ref={buttonRef}
-          aria-label="Menu"
+          aria-label='Menu'
           secondary={muiTheme.palette.secondary.main}
         >
-          <div   data-aos="fade-up"
-      data-aos-duration="2000" className="ham-box">
-            <div className="ham-box-inner" />
+          <div data-aos='fade-up' data-aos-duration='2000' className='ham-box'>
+            <div className='ham-box-inner' />
           </div>
         </StyledHamburgerButton>
 
@@ -342,7 +345,7 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/resume.pdf" className="resume-link">
+            <a href='/resume.pdf' className='resume-link'>
               Resume
             </a>
           </nav>
@@ -352,10 +355,12 @@ const Menu = () => {
       <style>
         {`
          .fillHeight{
-            filter: ${menuOpen ? 'blur(5px) brightness(0.7)' : 'unset'};
-            transition: ${menuOpen ? 'all 0.25s cubic-bezier(0.645,0.045,0.355,1)' : 'unset'};
+            filter: ${menuOpen ? "blur(5px) brightness(0.7)" : "unset"};
+            transition: ${
+              menuOpen ? "all 0.25s cubic-bezier(0.645,0.045,0.355,1)" : "unset"
+            };
             pointer-events: none;
-            user-select: ${menuOpen ? 'none' : 'unset'};  
+            user-select: ${menuOpen ? "none" : "unset"};  
          }
         `}
       </style>
