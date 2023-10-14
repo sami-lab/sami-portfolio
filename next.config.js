@@ -3,7 +3,7 @@ module.exports = {
     PLATFORM_NAME: process.env.PLATFORM_NAME,
     SEND_GRID_USERNAME: process.env.SEND_GRID_USERNAME,
     SEND_GRID_PASSWORD: process.env.SEND_GRID_PASSWORD,
-    SEND_GRID_Email: process.env.SEND_GRID_Email,
+    EMAIL_FROM: process.env.EMAIL_FROM,
     Admin_Email: process.env.Admin_Email,
     PHONE: process.env.PHONE,
   },

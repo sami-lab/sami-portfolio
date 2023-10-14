@@ -17,7 +17,7 @@ export default (req, res) => {
 
     transporter.sendMail(
       {
-        from: `${publicRuntimeConfig.PLATFORM_NAME} <${publicRuntimeConfig.SEND_GRID_Email}>`, // sender address
+        from: `${publicRuntimeConfig.PLATFORM_NAME} <${publicRuntimeConfig.EMAIL_FROM}>`, // sender address
         to: publicRuntimeConfig.Admin_Email, // list of receivers
         subject: "Message Recieved ✔", // Subject line
         text: `Message Sent by ${name} with Email ${email} and Phone ${phone}. "${message}"`, // plain text body
@@ -42,7 +42,7 @@ export default (req, res) => {
         } else {
           transporter.sendMail(
             {
-              from: `${publicRuntimeConfig.PLATFORM_NAME} <${publicRuntimeConfig.SEND_GRID_Email}>`, // sender address
+              from: `${publicRuntimeConfig.PLATFORM_NAME} <${publicRuntimeConfig.EMAIL_FROM}>`, // sender address
               to: email, // list of receivers
               subject: "Message Recieved ✔ ✔", // Subject line
               text: `Hello ${name}! Thanks for Contacting us! We have recieved your Request`, // plain text body
