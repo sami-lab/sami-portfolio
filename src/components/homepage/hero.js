@@ -61,7 +61,10 @@ export default function hero() {
   const { t, ready } = useTranslation();
   const classes = useStyles();
   const theme = useTheme();
+  const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
+  const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
+
   const [openContactModal, setOpenContactModal] = useState(false);
 
   return (
@@ -120,6 +123,13 @@ export default function hero() {
               fontWeight: 600,
               fontFamily: "Calibre",
               fontSize: "clamp(40px, 8vw, 80px)",
+              minHeight: matchesXS
+                ? "80px"
+                : matchesSM
+                ? "125px"
+                : matchesMD
+                ? "155px"
+                : "unset",
             }}
             data-aos='fade-up'
             data-aos-duration='2000'
