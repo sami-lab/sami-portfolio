@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
   message: {
     border: `2px solid #fff`,
-    marginTop: "3em",
+    marginTop: "2em",
     borderRadius: 5,
     padding: "4px",
     [theme.breakpoints.down("sm")]: {
@@ -161,7 +161,8 @@ export default function ContactPopup({ open, setOpen }) {
       <DialogContent
         style={{
           position: "relative",
-          padding: matchesSM ? "20px 10px" : "30px 40px",
+          padding: matchesSM ? "20px 10px" : "20px 40px",
+          paddingBottom: "10px",
         }}
       >
         <div style={{ position: "absolute", right: 5, top: 5 }}>
