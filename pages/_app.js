@@ -116,6 +116,7 @@ export default function MyApp(props) {
         <meta name='twitter:description' content={t("seo.description")} />
         <meta name='twitter:image' content={t("seo.image")} />
         <link rel='canonical' key='canonical' href={`/`} />
+        <script type='text/javascript' src='/tawk.js'></script>
       </Head>
       <link
         itemProp='thumbnailUrl'
