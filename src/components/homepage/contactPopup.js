@@ -127,8 +127,8 @@ export default function ContactPopup({ open, setOpen }) {
 
     axios
       .post(url, data)
-      .then((data) => {
-        const { status } = data.data;
+      .then((res) => {
+        const { status } = res.data;
         if (status === "success") {
           setData(initialData);
           setOpen(false);
