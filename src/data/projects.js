@@ -158,7 +158,7 @@ const projects = [
     image: "data-routing-tool.png",
     gitUrl: "",
     deployedUrl: "",
-    technologies: ["ReactJs", "Ant Design"],
+    technologies: ["ReactJs", "AntD", "NodeJS", "Sequelize", "Postgre"],
     category: "website-development",
     client: "Upwork",
     isFeatured: false,
