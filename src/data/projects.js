@@ -69,7 +69,7 @@ const projects = [
   {
     title: "Brussel Lake Paragon",
     summary:
-      "Website for Fiver Client. This website is created using NEXTJS from scratch.",
+      "This website is created using NEXTJS and material ui from scratch.",
     image: "brussellakeparagon.png",
     gitUrl: "",
     deployedUrl: "https://www.brussellakeparagon.com/",
